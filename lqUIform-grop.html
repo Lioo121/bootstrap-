@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lqUI/lqUI.css">
+    <link rel="stylesheet" href="../icon/font_ezlzxgvcixh/iconfont.css">
+    <link rel="stylesheet" href="../icon/font_yq2h74jfqw/iconfont.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            padding: 30px;
+            border: 1px solid #ccc;
+            width: 700px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .form-portait {
+            width: 460px;
+            height: 100%;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .label-item {
+            width: 100px;
+            text-align: right;
+            vertical-align: middle;
+            float: left;
+            font-size: 14px;
+            color: #606266;
+            line-height: 40px;
+            padding: 0 12px 0 0;
+            box-sizing: border-box;
+        }
+
+        .label-item::after {
+            content: "";
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+         .input-group {
+           position: relative;
+
+         } 
+         .icon-riqi{
+            position: absolute;
+    left: 106px;
+    top: 8px;
+    color: #c0c4cc;
+    margin-left: 5px;
+         }
+         .icon-shijian{
+            position: absolute;
+    left: 300px;
+    top: 9px;
+    color: #c0c4cc;
+    margin-left: 5px;
+         }
+
+        .input-group-ineer {
+            -webkit-appearance: none;
+            background-color: #fff;
+            background-image: none;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            display: inline-block;
+            font-size: inherit;
+            height: 40px;
+            line-height: 1;
+            outline: none;
+            padding: 0 15px;
+            width: 360px;
+        }
+
+        .input-group-right {
+            margin-left: 100px;
+        }
+
+        .ineer-left {
+            width: 160px;
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            height: 40px;
+            padding: 0 30px;
+
+        }
+
+        .ineer-center {
+            width: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: transparent;
+        }
+
+        .inlineCheckbox {
+            width: 160px;
+            display: inline-block;
+
+
+        }
+
+        .inlineCheckbox>.square-check {
+            vertical-align: middle;
+            margin: 1px 5px 1px 5px;
+        }
+
+        .inlineCheckbox>.circle-check {
+            vertical-align: middle;
+            margin: 1px 5px 1px 5px;
+        }
+
+        .form-control>.input-group>.input-groupbig {
+            height: 70px;
+            line-height: 1.5;
+        }
+
+        .input-group>.switch-info {
+            margin-top: 8px;
+        }
+        .form-item{
+            display: inline-block;
+            position: relative;
+        }
+        .form-inline{
+            width: 800px;
+        }
+        .icon-down2{
+            position: absolute;
+    height: 100%;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    color: #c0c4cc;
+    transition: all .3s;
+    pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <form class="form-portait">
+            <div class="form-control">
+                <label for="pass" class="label-item">密码</label>
+                <div class="input-group">
+                    <input type="text" class="input-group-ineer"></div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">确认密码</label>
+                <div class="input-group">
+                    <input type="text" class="input-group-ineer"></div>
+
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">年龄</label>
+                <div class="input-group">
+                    <input type="text" class="input-group-ineer"></div>
+
+            </div>
+            <div class="form-control">
+                <div class="input-group-right">
+                    <button class="btn lq-btn-info bg">提交</button>
+                    <button class="btn bg">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="box">
+        <form class="form-portait">
+            <div class="form-control">
+                <label for="pass" class="label-item">活动名称</label>
+                <div class="input-group">
+                    <input type="text" class="input-group-ineer"></div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">活动区域</label>
+                <div class="input-group">
+                    <input type="text" class="input-group-ineer" value="请选择活动区域">
+                    <span class="input-icon">
+                            <i class="iconfont icon-down2"></i>
+                        </span>
+                    </div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">活动时间</label>
+                <div class="input-group">
+                       
+                    <input type="text" class=" ineer-left" value="选择日期">
+                    <span class="input-icon">
+                            <i class="iconfont icon-riqi"></i>
+                        </span>
+                    <input type="text" class=" ineer-center" value="-">
+                    <input type="text" class=" ineer-left" value="活动时间">
+                    <span class="input-icon">
+                            <i class="iconfont icon-shijian"></i>
+                        </span>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">及时配送</label>
+                <div class="input-group">
+                    <input type="checkbox" class="switch switch-info">
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">活动性质</label>
+                <div class="input-group">
+                    <div class="inlineCheckbox">
+                        <div class="square-check">
+                            <input type="checkbox"></div>美食/餐厅线上活动
+                    </div>
+                    <div class="inlineCheckbox">
+                        <div class="square-check">
+                            <input type="checkbox"></div>地推活动
+                    </div>
+                    <div class="inlineCheckbox">
+                        <div class="square-check">
+                            <input type="checkbox"></div>线上主题活动
+                    </div>
+                    <div class="inlineCheckbox">
+                        <div class="square-check">
+                            <input type="checkbox"></div>单纯品牌曝光
+                    </div> 
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">特殊资源</label>
+                <div class="input-group">
+                    <div class="inlineCheckbox">
+                        <div class="circle-check">
+                            <input type="checkbox"></div>线上品牌商赞助
+                    </div>
+                    <div class="inlineCheckbox">
+                        <div class="circle-check">
+                            <input type="checkbox"></div>线下场地免费
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="pass" class="label-item">活动形式</label>
+                <div class="input-group ">
+                    <textarea type="text" class="input-group-ineer input-groupbig"></textarea></div>
+            </div>
+            <div class="form-control">
+                <div class="input-group-right">
+                    <button class="btn lq-btn-info bg">立即创建</button>
+                    <button class="btn bg">取消</button>
+                </div>
+        </form>
+    </div>
+</div>
+<div class="box">
+<form class="form-portait">
+        <div class="form-inline">
+            <div class="form-item">
+            <label for="pass" class="label-item">审批人</label>
+              <input type="text" class=" ineer-left"  value="审批人">
+            </div>
+            
+            <div class="form-item">
+              <label for="pass" class="label-item">活动区域</label>
+                <input type="text" class=" ineer-left" value="活动区域">
+                <span class="input-icon">
+                    <i class="iconfont icon-down2"></i>
+                </span>
+                </div>
+             <div class="form-item">
+                    <button class="btn lq-btn-info bg">查询</button>
+             </div>
+        </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

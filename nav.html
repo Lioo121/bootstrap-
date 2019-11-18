@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lqUI/lqUI.css">
+
+    <style>
+       *{ 
+          box-sizing: border-box; 
+       }
+       ul ，li{
+           margin: 0;
+      
+       }
+       .box{
+           width: 20rem;
+       }
+    </style>
+</head>
+<body>
+    <h2>
+        .nav 基础类的导航
+    </h2>
+        <nav class="nav">
+                <ul>
+                    <li><a href="#">导航001</a></li>
+                    <li class="active"><a href="#">导航002</a></li>
+                    <li><a href="#">导航003</a></li>
+                    <li><a href="#">导航004</a></li>
+                    <li><a href="#">导航005</a></li>
+                </ul>
+            </nav>
+            <h2>
+                .nav-tab  表示tab切换样式的导航
+            </h2>
+            <p>
+                这是一个选中后 带有悬浮效果的tab 样式
+            </p>
+    <nav class="nav nav-tab">
+        <ul>
+            <li><a href="#">导航001</a></li>
+            <li class="active"><a href="#">导航002</a></li>
+            <li><a href="#">导航003</a></li>
+            <li><a href="#">导航004</a></li>
+            <li><a href="#">导航005</a></li>
+        </ul>
+    </nav>
+    <p>我是内容测试.nav 有高度</p>
+
+
+
+<h2>
+    胶囊样式导航 经常应用在页面简介大方项目  主要使用颜色 #409eff  盒子有阴影效果，有立体感
+</h2>
+    <nav class="nav nav-pills">
+            <ul>
+                <li><a href="#">导航001</a></li>
+                <li class="active"><a href="#">导航002</a></li>
+                <li><a href="#">导航003</a></li>
+                <li><a href="#">导航004</a></li>
+                <li><a href="#">导航005</a></li>
+            </ul>
+        </nav>
+
+<h2>
+    .nav-stacked 侧边栏导航
+</h2>
+<p>
+    侧边栏默认宽度为100%  如果想要宽度小一些  请自定义添加父容器  并通过宽度位置属性实现你想要的效果
+</p>
+        <nav style="width: 20%;">
+                <ul  class="nav nav-pills nav-stacked">
+                    <li><a href="#">导航001</a></li>
+                    <li class="active"><a href="#">导航002</a></li>
+                    <li><a href="#">导航003</a></li>
+                    <li><a href="#">导航004</a></li>
+                    <li><a href="#">导航005</a></li>
+                </ul>
+            </nav>
+            <nav class="nav nav-inverse">
+                    <ul>
+                        <li><a href="#">导航001</a></li>
+                        <li class="active"><a href="#">导航002</a></li>
+                        <li><a href="#">导航003</a></li>
+                        <li><a href="#">导航004</a></li>
+                        <li><a href="#">导航005</a></li>
+                    </ul>
+                </nav>
+                <div class="box">
+                <nav class="nav nav-inverse-stacked" >
+                        <ul>
+                            <li><a href="#">导航001</a></li>
+                            <li class="active"><a href="#">导航002</a></li>
+                            <li><a href="#">导航003</a></li>
+                            <li><a href="#">导航004</a></li>
+                            <li><a href="#">导航005</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="nav nav-inverse-black" >
+                        <ul>
+                            <li><a href="#">导航001</a></li>
+                            <li class="active"><a href="#">导航002</a></li>
+                            <li><a href="#">导航003</a></li>
+                            <li><a href="#">导航004</a></li>
+                            <li><a href="#">导航005</a></li>
+                        </ul>
+                    </nav>
+                    <div class="box">
+                            <nav class="nav nav-inverse-grey" >
+                                    <ul>
+                                        <li><a href="#">导航001</a></li>
+                                        <li class="active"><a href="#">导航002</a></li>
+                                        <li><a href="#">导航003</a></li>
+                                        <li><a href="#">导航004</a></li>
+                                        <li><a href="#">导航005</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+</body>
+</html>

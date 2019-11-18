@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+div:hover{
+    /* 
+    cursor  控制鼠标样式；系统样式
+
+    */
+    /* 鼠标变问好 */
+    /* cursor:help; */
+
+    /* 鼠标变手 */
+    cursor:pointer;
+
+    /* 鼠标变十字架 */
+    /* cursor: cell; */
+
+    /* 加载圈圈 */
+    /* cursor: wait; */
+
+    /* 禁止鼠标默认样式 */
+    /* cursor: default; */
+}
+  
+    input{
+    border: none;
+    appearance:none;
+    -moz-appearance:none;
+    /* outline:none; input标签聚焦不出现默认边框: */
+    /* -webkit-appearance: none;用于IOS下移除原生样式 */
+}
+
+/* input:focus{ outline:none; } input标签聚焦不出现默认边框: */
+/* border: none; appearance:none; -moz-appearance:none; outline:none;input标签聚焦不出现默认边框: -webkit-appearance: none;//用于IOS下移除原生样式 } //or: input:focus{ outline:none; }//input标签聚焦不出现默认边框: */
+/* input标签placeholder样式重设: */
+
+</style>
+<body>
+    <div class="box"></div>
+    <form action="">
+        <input type="text">  文本输入
+        <input type="password"> 密码
+        <input type="file">   文件
+        <input type="submit">  提交
+        <input type="select">  单选
+        <input type="radio">  圆角
+        <input type="email">  邮箱
+        <input type="checkbox"> 方块多选
+        <button>按钮</button>
+        <select name="" id="">
+            <option>789987</option>
+            <option>45466</option>
+            <option>12131</option>
+
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
